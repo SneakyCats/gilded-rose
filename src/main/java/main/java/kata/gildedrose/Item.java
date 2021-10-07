@@ -1,15 +1,19 @@
 package main.java.kata.gildedrose;
 
-public final class Item {
+public class Item {
 
-    public int quality;
+    public String name;
     public int sellIn;
-    public final String name;
+    public int quality;
 
     public Item(String name, int sellIn, int quality) {
-        this.quality = quality;
-        this.sellIn = sellIn;
         this.name = name;
+        this.sellIn = sellIn;
+        this.quality = quality;
     }
 
+    @Override
+    public String toString() {
+        return this.name + ", " + this.sellIn + ", " + this.quality;
+    }
 }

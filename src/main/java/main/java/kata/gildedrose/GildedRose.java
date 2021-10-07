@@ -1,10 +1,10 @@
 package main.java.kata.gildedrose;
 
-public final class Shop {
+public class GildedRose {
 
-    Item[] items;
+    public Item[] items;
 
-    public Shop(Item[] items) {
+    public GildedRose(Item[] items) {
         this.items = items;
     }
 
